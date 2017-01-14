@@ -1,0 +1,6 @@
+framework module Pods_Dino {
+  umbrella header "Pods-Dino-umbrella.h"
+
+  export *
+  module * { export * }
+}

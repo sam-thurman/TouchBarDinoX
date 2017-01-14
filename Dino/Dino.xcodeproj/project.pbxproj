@@ -17,6 +17,10 @@
 		186582F41DE4A9FC000BDDD7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186582F31DE4A9FC000BDDD7 /* SpriteKit.framework */; };
 		186582F61DE4C4B1000BDDD7 /* DinoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186582F51DE4C4B1000BDDD7 /* DinoScene.swift */; };
 		186582F81DE4C616000BDDD7 /* DinoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186582F71DE4C616000BDDD7 /* DinoView.swift */; };
+		18A0FE101E2AC45300EFED86 /* DinoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0FE0F1E2AC45300EFED86 /* DinoManager.swift */; };
+		5CC95674E4A0B45FBDCE46D0 /* Pods_Dino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A67377F10981FB7C5A1DC2E /* Pods_Dino.framework */; };
+		AE579E4226105DD4C2A1933D /* Pods_DinoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF93591FAB695CA926A4E52B /* Pods_DinoTests.framework */; };
+		C34CFCF0BAA3AD52146ACBDC /* Pods_DinoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3750BA1A527BC8FD066B3503 /* Pods_DinoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,16 @@
 		186582F31DE4A9FC000BDDD7 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		186582F51DE4C4B1000BDDD7 /* DinoScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinoScene.swift; sourceTree = "<group>"; };
 		186582F71DE4C616000BDDD7 /* DinoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinoView.swift; sourceTree = "<group>"; };
+		18A0FE0F1E2AC45300EFED86 /* DinoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinoManager.swift; sourceTree = "<group>"; };
+		3750BA1A527BC8FD066B3503 /* Pods_DinoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A67377F10981FB7C5A1DC2E /* Pods_Dino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCED1CCE793604ACC776671 /* Pods-DinoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinoTests/Pods-DinoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8648350604A32B5E37FDB834 /* Pods-DinoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinoUITests/Pods-DinoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A9D9AF7FDF300E593807957 /* Pods-Dino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dino/Pods-Dino.debug.xcconfig"; sourceTree = "<group>"; };
+		A02C125A22BA81C8C4FA0504 /* Pods-Dino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dino.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dino/Pods-Dino.release.xcconfig"; sourceTree = "<group>"; };
+		BF93591FAB695CA926A4E52B /* Pods_DinoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC31CD0D059C906978C3BA2 /* Pods-DinoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinoTests/Pods-DinoTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF1C193434619F90E53E12EE /* Pods-DinoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinoUITests/Pods-DinoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186582F41DE4A9FC000BDDD7 /* SpriteKit.framework in Frameworks */,
+				5CC95674E4A0B45FBDCE46D0 /* Pods_Dino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE579E4226105DD4C2A1933D /* Pods_DinoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34CFCF0BAA3AD52146ACBDC /* Pods_DinoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +106,7 @@
 				186582DF1DE3B86E000BDDD7 /* DinoUITests */,
 				186582C11DE3B86D000BDDD7 /* Products */,
 				186582F21DE4A9FC000BDDD7 /* Frameworks */,
+				CF19C105E402BC7950D95302 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +128,7 @@
 				186582C51DE3B86D000BDDD7 /* ViewController.swift */,
 				186582F71DE4C616000BDDD7 /* DinoView.swift */,
 				186582F51DE4C4B1000BDDD7 /* DinoScene.swift */,
+				18A0FE0F1E2AC45300EFED86 /* DinoManager.swift */,
 				186582C71DE3B86D000BDDD7 /* Assets.xcassets */,
 				186582C91DE3B86E000BDDD7 /* Main.storyboard */,
 				186582CC1DE3B86E000BDDD7 /* Info.plist */,
@@ -139,8 +158,24 @@
 			isa = PBXGroup;
 			children = (
 				186582F31DE4A9FC000BDDD7 /* SpriteKit.framework */,
+				6A67377F10981FB7C5A1DC2E /* Pods_Dino.framework */,
+				BF93591FAB695CA926A4E52B /* Pods_DinoTests.framework */,
+				3750BA1A527BC8FD066B3503 /* Pods_DinoUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF19C105E402BC7950D95302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A9D9AF7FDF300E593807957 /* Pods-Dino.debug.xcconfig */,
+				A02C125A22BA81C8C4FA0504 /* Pods-Dino.release.xcconfig */,
+				6BCED1CCE793604ACC776671 /* Pods-DinoTests.debug.xcconfig */,
+				EFC31CD0D059C906978C3BA2 /* Pods-DinoTests.release.xcconfig */,
+				8648350604A32B5E37FDB834 /* Pods-DinoUITests.debug.xcconfig */,
+				FF1C193434619F90E53E12EE /* Pods-DinoUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186582E51DE3B86E000BDDD7 /* Build configuration list for PBXNativeTarget "Dino" */;
 			buildPhases = (
+				3ED5D910E43CE674F471A404 /* [CP] Check Pods Manifest.lock */,
 				186582BC1DE3B86D000BDDD7 /* Sources */,
 				186582BD1DE3B86D000BDDD7 /* Frameworks */,
 				186582BE1DE3B86D000BDDD7 /* Resources */,
+				3D7EF48074E496F2B77E5BFA /* [CP] Embed Pods Frameworks */,
+				46E49B4EFBE977C112C216BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186582E81DE3B86E000BDDD7 /* Build configuration list for PBXNativeTarget "DinoTests" */;
 			buildPhases = (
+				4CE2F10F6CD9942CC750AD07 /* [CP] Check Pods Manifest.lock */,
 				186582CD1DE3B86E000BDDD7 /* Sources */,
 				186582CE1DE3B86E000BDDD7 /* Frameworks */,
 				186582CF1DE3B86E000BDDD7 /* Resources */,
+				E0488EB1E3BEF4D34F38AA28 /* [CP] Embed Pods Frameworks */,
+				F52A940D71680C7384CB5D74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186582EB1DE3B86E000BDDD7 /* Build configuration list for PBXNativeTarget "DinoUITests" */;
 			buildPhases = (
+				CEDFF079DFB19427DC0ADCFA /* [CP] Check Pods Manifest.lock */,
 				186582D81DE3B86E000BDDD7 /* Sources */,
 				186582D91DE3B86E000BDDD7 /* Frameworks */,
 				186582DA1DE3B86E000BDDD7 /* Resources */,
+				4E204E0569A81B14CE602DAE /* [CP] Embed Pods Frameworks */,
+				DF31A3521F0D79BE5CB5FBAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +318,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D7EF48074E496F2B77E5BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dino/Pods-Dino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ED5D910E43CE674F471A404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46E49B4EFBE977C112C216BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dino/Pods-Dino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CE2F10F6CD9942CC750AD07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E204E0569A81B14CE602DAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinoUITests/Pods-DinoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDFF079DFB19427DC0ADCFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF31A3521F0D79BE5CB5FBAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinoUITests/Pods-DinoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0488EB1E3BEF4D34F38AA28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinoTests/Pods-DinoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F52A940D71680C7384CB5D74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinoTests/Pods-DinoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		186582BC1DE3B86D000BDDD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,6 +464,7 @@
 				186582F81DE4C616000BDDD7 /* DinoView.swift in Sources */,
 				186582C61DE3B86D000BDDD7 /* ViewController.swift in Sources */,
 				186582EF1DE3BC00000BDDD7 /* WindowController.swift in Sources */,
+				18A0FE101E2AC45300EFED86 /* DinoManager.swift in Sources */,
 				186582C41DE3B86D000BDDD7 /* AppDelegate.swift in Sources */,
 				186582F61DE4C4B1000BDDD7 /* DinoScene.swift in Sources */,
 			);
@@ -422,13 +605,14 @@
 		};
 		186582E61DE3B86E000BDDD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9D9AF7FDF300E593807957 /* Pods-Dino.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZET9SZ3EH2;
 				INFOPLIST_FILE = Dino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuhuili.Dino;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuhuili.DinoX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -436,13 +620,14 @@
 		};
 		186582E71DE3B86E000BDDD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02C125A22BA81C8C4FA0504 /* Pods-Dino.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZET9SZ3EH2;
 				INFOPLIST_FILE = Dino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuhuili.Dino;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuhuili.DinoX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -450,6 +635,7 @@
 		};
 		186582E91DE3B86E000BDDD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BCED1CCE793604ACC776671 /* Pods-DinoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +652,7 @@
 		};
 		186582EA1DE3B86E000BDDD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC31CD0D059C906978C3BA2 /* Pods-DinoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +669,7 @@
 		};
 		186582EC1DE3B86E000BDDD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8648350604A32B5E37FDB834 /* Pods-DinoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -497,6 +685,7 @@
 		};
 		186582ED1DE3B86E000BDDD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1C193434619F90E53E12EE /* Pods-DinoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;

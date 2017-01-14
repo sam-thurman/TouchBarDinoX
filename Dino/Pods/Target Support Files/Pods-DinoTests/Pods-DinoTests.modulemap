@@ -1,0 +1,6 @@
+framework module Pods_DinoTests {
+  umbrella header "Pods-DinoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
