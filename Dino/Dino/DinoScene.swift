@@ -31,10 +31,13 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
     let titleNode = SKLabelNode(fontNamed: "Courier")
     let subtitleNode = SKLabelNode(fontNamed: "Courier")
     let scoreNode = SKLabelNode(fontNamed: "Courier")
+    let rankingNode = SKLabelNode(fontNamed: "Courier")
     let dinoSpriteNode = SKSpriteNode(imageNamed: "DinoSprite")
     let bottomCollider: SKPhysicsBody = SKPhysicsBody(edgeFrom: CGPoint(x: 0, y:0), to: CGPoint(x:1005, y:0))
     
     var currentScore = 0
+    
+    var prevEndGameCalled = Date().timeIntervalSince1970
     
     override func didMove(to view: SKView) {
         if !sceneCreated {
@@ -59,8 +62,10 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
         updateScore()
         titleNode.isHidden = true
         subtitleNode.isHidden = true
+        rankingNode.isHidden = true
         self.shouldSpawnObstacle = true
         self.spawnObstacle()
+        
     }
     
     func createSceneContents() {
@@ -68,6 +73,7 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(subtitleLabel())
         self.addChild(dinoSprite())
         self.addChild(scoreLabel())
+        self.addChild(rankingLabel())
         self.physicsWorld.contactDelegate = self
         self.backgroundColor = SKColor.lightGray
         //self.scaleMode = .aspectFit
@@ -90,7 +96,7 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func titleLabel() -> SKLabelNode {
-        titleNode.text = "TouchBarDino"
+        titleNode.text = "TouchBarDinoX"
         titleNode.fontSize = 10
         titleNode.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         titleNode.fontColor = dinoDarkColor
@@ -120,6 +126,17 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
         return scoreNode
     }
     
+    func rankingLabel() -> SKLabelNode {
+        rankingNode.text = ""
+        rankingNode.fontSize = 13
+        rankingNode.horizontalAlignmentMode = .right
+        rankingNode.position = CGPoint(x: self.frame.maxX - 4, y:self.frame.midY - 11)
+        rankingNode.fontColor = dinoDarkColor
+        rankingNode.zPosition = 80
+        
+        return rankingNode
+    }
+    
     func generateScore() -> String {
         return String(format: "%07d", currentScore)
     }
@@ -144,6 +161,14 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func endGame() {
+        if (Date().timeIntervalSince1970 - prevEndGameCalled > 2) {
+            prevEndGameCalled = Date().timeIntervalSince1970
+            let rank = DinoManager.sendScore(score: currentScore)
+            if !rank.isEmpty {
+                rankingNode.isHidden = false
+                rankingNode.text = String(format: "Rank: %@", rank)
+            }
+        }
         
         titleNode.isHidden = false
         subtitleNode.isHidden = false
@@ -157,6 +182,7 @@ class DinoScene: SKScene, SKPhysicsContactDelegate {
                 node.physicsBody?.velocity = CGVector(dx:0, dy:0)
             }
         }
+        
     }
     
     func jump() {
